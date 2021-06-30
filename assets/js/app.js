@@ -85,7 +85,6 @@ function setLanguage(lang){
     $(".skills").text(en.skills);
     $(".education").text(en.education);
     $(".contact").text(en.contact);
-    $("#home_section").text(en.bio);
     $("#paragraph").html(en.bioBody).addClass("engParagraph");
     $("#skillTitle").text(en.skills);
     $("#eduTitle").text(en.education);
@@ -106,7 +105,6 @@ function setLanguage(lang){
   $(".skills").text(mm.skills);
   $(".education").text(mm.education);
   $(".contact").text(mm.contact);
-  $("#home_section").text(mm.bio);
   $("#paragraph").html(mm.bioBody).addClass("myanParagraph");
   $("#skillTitle").text(mm.skills);
   $("#eduTitle").text(mm.education);
@@ -129,7 +127,6 @@ var en={
   "skills":"SKILLS",
   "education":"EDUCATION",
   "contact":"CONTACT",
-  "bio":"BIO",
   "bioBody":"Hello <br> I am currently studying at Computer University (Sittwe) <br> I am an undergraduate student . I enjoy to study computer science. Now I am studying the subjects required to become a Full Stack Web Developer .  If you have any suggestions, please feel free to contact me via Gmail",
 "university":"Studies At University Of Computer Studies-Sittway",
   "formName":"Name",
@@ -147,7 +144,6 @@ var mm={
     "skills":"ကျွမ်းကျင်မှုများ",
     "education":"ပညာရေး",
     "contact":"ဆက်သွယ်ရန်",
-    "bio":"မိတ်ဆက်",
     "bioBody":" သာလီစွပါ <br> ကျွန်တော်ကတော့ အခုလက်ရှိ <br class=\"d-block d-md-none\"> ရခိုင်ပြည်နယ်၊စစ်တွေမြို့မှာရှိတဲ့ <br> ကွန်ပျူတာတက္ကသိုလ်မှာ <br class=\"d-none d-md-inline\"> ဘွဲ့ကြို တက်ရောက်နေတဲ့ကျောင်းသား  တစ်ယောက်ဖြစ်ပါတယ် <br class=\"d-none d-md-inline\"> ကွန်ပျူတာဘာသာရပ်တွေကို လေ့လာရတာ နှစ်သက်ပါတယ် <br> အခု ကျွန်တော်က Full Stack Web Developer တစ်‌ယောက် ဖြစ်ဖို့အတွက် <br class=\"d-none d-md-block\"> လိုအပ်တာတွေကို လေ့လာနေပါတယ် <br> မိမိအား အကြံညဏ်များပေးလိုပါက အောက်တွင်ဖော်ပြထားတဲ့ <br class=\"d-none d-md-inline\">Gmail ကနေတစ်ဆင့်ဆက်သွယ်အကြံပြုနိုင်ပါတယ် ",
     "university":"ကွန်ပျူတာတက္ကသိုလ်(စစ်တွေ) တွင်ပညာသင်ကြားနေပါသည်",
     "formName":"အမည်",
