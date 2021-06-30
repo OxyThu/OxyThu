@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Profile</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--slide navbar section-->
+    <div id="mySidenav" class="sidenav gy-4">
+        <a href="javascript:void(0)" class="closebtn fs-5" onclick="closeNav()"><i class="fas fa-window-close "></i></a>
+        <a href="#home_section" onclick="closeNav()" class="bio home" >ပင်မစာမျက်နှာ</a>
+        <a href="#Skill_section" onclick="closeNav()" class="bio skills" >ကျွမ်းကျင်မှုများ</a>
+        <a href="#Edu_section" onclick="closeNav()" class="bio education">ပညာရေး</a>
+        ‌<a href="#Contact_section" onclick="closeNav()" class="bio contact">ဆက်သွယ်ရန်</a>
+        <hr class="mt-3">
+        <div class="dropdown myDropDown">
+            <button  class="btn text-dark bg-light btn-dark dropdown-toggle fs-5  dropdownBtn language bio" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               ဘာသာစကား
+            </button>
+            <div class="dropdown-menu ddMenu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item ddItem text-dark text-lg-white fs-6 myanmar" onclick="setLanguage('mm')">မြန်မာ</a>
+              <a class="dropdown-item ddItem text-dark text-lg-white fs-6 english" onclick="setLanguage('en')" >အင်္ဂလိပ်</a>
+            
+            </div>
+          </div>
+        </div>
+    
+
+    <div class="container-fluid">
+        <!--navbar section-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary rounded-bottom animate__rubberBand" style="animation-duration: 1000ms;">
+            <div class="d-flex flex-fill ps-5 ">
+               
+                <div class="dropdown d-none d-md-block">
+                    <button id="language" class="btn text-dark bg-light btn-dark dropdown-toggle fs-5 rounded-start language" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       ဘာသာစကား
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item myanmar  " href="#" onclick="setLanguage('mm')" >မြန်မာ</a>
+                      <a class="dropdown-item english"  href="#" onclick="setLanguage('en')" >အင်္ဂလိပ်</a>
+                    
+                    </div>
+                  </div>
+            </div>
+            <div class="navbar-nav pe-5 ">
+                <li class="nav-item pe-3 d-none d-lg-block">
+                    <a href="#home_section" class="nav-link fs-5 p bio home" id="">ပင်မစာမျက်နှာ</a>
+                </li>
+                <li class="nav-item pe-3 d-none d-lg-block">
+                    <a href="#Skill_section" class="nav-link fs-5 bio skills" id="">ကျွမ်းကျင်မှုများ</a>
+                </li>
+                <li class="nav-item pe-3 d-none d-lg-block">
+                    <a href="#Edu_section" class="nav-link fs-5 bio education" id="">ပညာရေး</a>
+                </li>
+                <li class="nav-item pe-3 d-none d-lg-block">
+                    <a href="#Contact_section" class="nav-link fs-5 bio contact" id="">ဆက်သွယ်ရန်</a>
+                </li>
+                <li class="nav-item pe-3 d-block d-lg-none">
+                    <span onclick="openNav()" class="nav-link menuBar fs-5"><i class="fas fa-bars"></i></span>
+                </li>
+            </div>
+        </nav>
+
+        <!--Home Section Carousel and Bio-->
+        <div class=" row mb-5">
+            <div class="carousel slide  col-md-5  mx-auto animate__fadeInTopLeft" data-bs-ride="carousel" id="slide" style="max-width: fit-content;animation-duration: 2000ms;">
+                <a href="#slide" class="carousel-control-prev " data-bs-slide="prev">
+                    <span class="fs-1 text-secondary">&lt;</span>
+                </a>
+                <a href="#slide" class="carousel-control-next " data-bs-slide="next">
+                    <span class="fs-1 text-secondary">&gt;</span>
+                </a>
+                <div class="carousel-inner" style="max-width: fit-content;" >
+                    <div class="carousel-item active pe-auto">
+                       <img src="assets/photos/first.png" alt="author photo" width="400px">
+                    </div>
+                    <div class="carousel-item  pe-auto">
+                       <img src="assets/photos/third.png" alt="author photo"  width="400px">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#slide" data-bs-slide-to="1" class="active"></button>
+
+                </div>
+            </div>
+            <div class="col-md-7 py-5 animate__fadeInTopRight" style="animation-duration: 2000ms;">
+                <h1 class="text-center fw-bolder py-3 pe-auto pe-md-5 bio" id="home_section">မိတ်ဆက်</h1>
+                <p class="fs-5  text-center py-3 pe-auto pe-md-5 fw-bold bio " id="paragraph">
+                    သာလီစွပါ <br> ကျွန်တော်ကတော့ အခုလက်ရှိ <br class="d-block d-md-none"> ရခိုင်ပြည်နယ်၊စစ်တွေမြို့မှာရှိတဲ့ <br> ကွန်ပျူတာတက္ကသိုလ်မှာ <br class="d-none d-md-inline"> ဘွဲ့ကြို တက်ရောက်နေတဲ့ကျောင်းသား 
+                    တစ်ယောက်ဖြစ်ပါတယ် <br class="d-none d-md-inline"> ကွန်ပျူတာဘာသာရပ်တွေကို လေ့လာရတာ နှစ်သက်ပါတယ် <br> အခု ကျွန်တော်က Full Stack Web Developer တစ်‌ယောက်
+                    ဖြစ်ဖို့အတွက် <br class="d-none d-md-block"> လိုအပ်တာတွေကို လေ့လာနေပါတယ် <br> မိမိအား အကြံညဏ်များပေးလိုပါက အောက်တွင်ဖော်ပြထားတဲ့ <br class="d-none d-md-inline">Gmail ကနေတစ်ဆင့်ဆက်သွယ်အကြံပြုနိုင်ပါတယ် 
+                </p>
+                <h6 class="text-center fw-bolder  pe-auto pe-md-5 fs-3 "><a href="mailto:oxythu27@gmail.com" class="text-decoration-none mail"><i class="far fa-envelope "></i> <span class="ms-2 fs-5">oxythu27@gmail.com</span></a></h6>
+            </div>
+        </div>
+        <!--End Home Section-->
+        <hr class="mt-5">
+
+        <!--Skill and Education Section-->
+        <div class="row mb-5  bg-light h-auto">
+            
+            <div class="col-md-6  py-5"  id="Skill_section">
+                <div class="mb-5 ms-3">
+                    <h1 class="bio fw-bold  pt-5 pt-lg-0" id="skillTitle">ကျွမ်းကျင်မှုများ</h1>
+                </div>
+                <div class="ms-5 skill border-end">
+                    <h6 class="mt-3">HTML&nbsp;<i class="fab fa-html5"></i>  </h6>
+                    <div class="progress w-75 ms-0 ">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                    <h6 class="mt-3">CSS&nbsp;<i class="fab fa-css3-alt"></i></h6>
+                    <div class="progress w-75 ms-0 ">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                    <h6 class="mt-3">JAVASCRIPT&nbsp;<i class="fab fa-js-square"></i></h6>
+                    <div class="progress w-75 ms-0 ">
+                        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                    </div>
+                    <h6 class="mt-3">MYSQL&nbsp;<i class="fas fa-database"></i>  </h6>
+                    <div class="progress w-75 ms-0 ">
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                    </div>
+                    <h6 class="mt-3">PHP&nbsp;<i class="fab fa-php"></i>  </h6>
+                    <div class="progress w-75 ms-0  ">
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                    </div>
+                    <h6 class="mt-3">JAVA&nbsp;<i class="fab fa-java"></i> </h6>
+                    <div class="progress w-75 ms-0  ">
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                    </div>
+                    <h6 class="mt-3">C++&nbsp;<i class="fas fa-laptop"></i> </h6>
+                    <div class="progress w-75 ms-0  ">
+                        <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6 py-5 " id="Edu_section">
+                <div >
+                    <h1 class="mb-5 ms-3 bio fw-bold" id="eduTitle" >
+                        ပညာရေး
+                    </h1>
+                    <ul class="list-group fs-md-5 fs-6 mx-auto">
+                       <li class="list-group-item  bg-secondary text-white"> <span class=""><i class="far fa-calendar-alt"></i>&nbsp;(2017-Present) </span><br> <i class="fas fa-university"></i> <span id="university">ကွန်ပျူတာတက္ကသိုလ်(စစ်တွေ) တွင်ပညာသင်ကြားနေပါသည်</span> </li>
+                    </ul>  
+                </div>
+            
+            </div>
+        </div>
+        <!--End Skill and Edu Section-->
+        <hr class="mt-5">
+        <!--Contact Section-->
+            <div class="row" id="Contact_section">
+                <h1 class="bio fw-bold  pt-5 pt-lg-0 ms-3 .contact_title" id="contactTitle">ဆက်သွယ်ရန်</h1>
+               
+                <div class="col-12 col-lg-6 mt-3 mt-lg-5 py-3 border-end">
+                   
+                    <h4 class="ms-5 mb-2 mb-lg-4 contact_link1">
+                        <a href="https://www.facebook.com/oxy.thu" class="text-decoration-none contactIcon">
+                            <i class="fab fa-facebook "></i>
+                             <span class="ms-2 d-lg-inline d-none ">Aung Si Thu</span>
+                        </a>
+                    </h4>
+                   
+                    <h4  class="ms-5 mb-2 mb-lg-4  text-center text-lg-start  contact_link2">
+                        <a href="https://github.com/OxyThu" class="text-decoration-none github contactIcon">
+                            <i class="fab fa-github"></i> 
+                            <span class="ms-2 d-lg-inline d-none ">OxyThu</span>
+                        </a>
+                    </h4>
+                    <h4  class="ms-5 mb-2 mb-lg-4 contact_link3">
+                        <a href="https://www.instagram.com/oxy_thu/?hl=en" class="text-decoration-none insta contactIcon">
+                            <i class="fab fa-instagram-square"></i> 
+                            <span class="ms-2 d-lg-inline d-none ">oxy_thu</span>
+                        </a>
+                    </h4>
+                    
+                    <h4  class="ms-5  mb-2 mb-lg-4 text-center text-lg-start  contact_link4">
+                        <a href="https://www.youtube.com/channel/UCawabVprdxsYEjuFBbgEVHA" class="text-decoration-none youtube contactIcon">
+                            <i class="fab fa-youtube"></i>
+                            <span class="ms-2 d-lg-inline d-none ">OxyThu</span>
+                        </a> 
+                    </h4>
+                    <h4  class="ms-5  mb-2 mb-lg-5  contact_link5">
+                        <a href="https://twitter.com/aungsi49983579" class="text-decoration-none twitter contactIcon">
+                            <i class="fab fa-twitter-square"></i>
+                            <span class="ms-2 d-lg-inline d-none ">aungsi49983579</span>
+                        </a> 
+                    </h4>
+                </div>
+                <hr class="d-inline d-lg-none mt-3">
+                <div class="col-12 col-lg-6 mt-0" id="form_section">
+                    <form>
+                       <div class="mb-2 mb-lg-4 formInput1">
+                            <label for="name" class="form-label ms-5 " id="formName">အမည်</label>
+                            <input type="text" id="name" class="form-control w-75 ms-5" placeholder="" disabled>
+                        </div>
+                        <div class="mb-2 mb-lg-4 formInput2">
+                            <label for="email" class="form-label ms-5" id="formMail">အီး‌မေးလိပ်စာ</label>
+                            <input type="text" id="email" class="form-control w-75 ms-5" placeholder="" disabled>
+                        </div>
+                        <div class="mb-2 mb-lg-4 formInput3">
+                            <label for="subject" class="form-label ms-5" id="formSubject">အကြောင်းအရာ</label>
+                            <textarea name="" id="subject" cols="30" rows="3" class="form-control w-75 ms-5" disabled></textarea>
+                        </div>
+                        <div class="mb-5 mt-5 mt-lg-0 w-75 ms-5 formInput4">
+                            <button type="button" class="btn btn-secondary float-start" id="formSubmit" data-bs-toggle="modal" data-bs-target="#warning" >ပေးပို့သည်</button>
+                        </div>
+                          
+                       
+                      </form>
+                </div>
+               
+            </div>
+        <!--End Contact Section-->
+
+    </div>
+    <div class="fixed">
+        <a href="#" class="text-decoration-none"><i class="fas fa-chevron-circle-up "></i></a>
+    </div>
+
+    <!--Warning Section-->
+    <div class="modal pt-5 my-5 " id="warning">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header  bg-warning">
+                    <h4 class="modal-title " id="warningTitle">
+                        အသိပေးချက်
+                    </h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="mx-auto my-4" id="warningBody" >ဤလုပ်ဆောင်ချက်ကို အသုံးပြု၍မရသေးပါ </p>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+  <!--End Warning Section-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+crossorigin="anonymous"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

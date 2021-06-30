@@ -1,0 +1,132 @@
+.rounded-bottom {
+    border-bottom-right-radius: 50px!important;
+    border-bottom-left-radius: 50px!important;
+}
+.bio{
+    font-family: cursive;
+    
+}
+.engParagraph{
+  line-height: 2em;
+}
+.myanParagraph{
+  line-height: 1.5em;
+}
+.rounded-start {
+    border-top-right-radius: 25px !important;
+    border-bottom-left-radius: 25px!important;
+    border-top-left-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+.carousel{
+    z-index: 0;
+}
+
+.insta{
+  background: linear-gradient(to right,#833ab4,#c13584,#e1306c,#fd1d1d);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+.mail{
+  background: linear-gradient(to right,#4285F4,#BB001B,#EA4335,#FBBC05,#34A853);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+.twitter{
+  color:#00acee;
+}
+.github{
+  color:#333;
+}
+
+.youtube{
+  color:#FF0000;
+}
+
+/* Side nav section */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 50;
+    right: 0;
+    background-color:#8FBC8F;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .myDropDown{
+    padding: 8px 8px 8px 32px;
+    transition: 0.3s;
+    margin-top:15px;
+    
+  }
+  .dropdownBtn{
+      font-size: 15px;
+      border-radius: 0;
+      width: fit-content;
+      background-color: #7ff;
+      border-radius: 20px 20px 20px 20px;
+  }
+  .ddMenu{
+      width: fit-content;
+  }
+  .ddMenu,.ddItem{
+      border-radius:  20px 20px 20px 20px;
+      font-size: 15px;
+  }
+  .sidenav a:hover {
+    color:black;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 45px;
+    margin-right: 25px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+ 
+
+
+  /*---- End Sidenav Section ----*/
+
+  @media (max-width:800px) {
+    .contactIcon{font-size:3em ;}
+   
+  }
+
+  @media (min-width:800px) {
+    .contactIcon{font-size: 1em;}
+  }
+
+  .fixed {
+    position: fixed;
+    color: #73AD21;
+    bottom: 10%;
+    right: 5%;
+    font-size: 3em;
+    display: none;
+  }
