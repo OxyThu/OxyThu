@@ -67,10 +67,10 @@ function animation(){
     $(".contact_link5").addClass("animate__heartBeat").css("animation-duration","2500ms");
   }
   if(finalHeight > formSection.top.toFixed()){
-    $(".formInput1").addClass("animate__heartBeat").css("animation-duration","1750ms");
-    $(".formInput2").addClass(" animate__heartBeat").css("animation-duration","2000ms");
-    $(".formInput3").addClass("animate__heartBeat").css("animation-duration","2250ms");
-    $(".formInput4").addClass("animate__heartBeat").css("animation-duration","2500ms");
+    $(".formInput1").addClass("animate__heartBeat").css("animation-duration","1500ms");
+    $(".formInput2").addClass(" animate__heartBeat").css("animation-duration","1750ms");
+    $(".formInput3").addClass("animate__heartBeat").css("animation-duration","2000ms");
+    $(".formInput4").addClass("animate__heartBeat").css("animation-duration","2250ms");
   }
 }
 

@@ -13,7 +13,7 @@
 />
  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="bg">
     <!--slide navbar section-->
     <div id="mySidenav" class="sidenav gy-4">
         <a href="javascript:void(0)" class="closebtn fs-5" onclick="closeNav()"><i class="fas fa-window-close "></i></a>
@@ -106,11 +106,11 @@
         <hr class="mt-5">
 
         <!--Skill and Education Section-->
-        <div class="row mb-5  bg-light h-auto">
+        <div class="row mb-5 skilledu h-auto">
             
-            <div class="col-md-6  py-5"  id="Skill_section">
+            <div class="col-md-6  py-5"  id="Skill_section" >
                 <div class="mb-5 ms-3">
-                    <h1 class="bio fw-bold  pt-5 pt-lg-0" id="skillTitle">ကျွမ်းကျင်မှုများ</h1>
+                    <h1 class="bio fw-bold  pt-5 pt-lg-0 text-dark" id="skillTitle">ကျွမ်းကျင်မှုများ</h1>
                 </div>
                 <div class="ms-5 skill border-end">
                     <h6 class="mt-3">HTML&nbsp;<i class="fab fa-html5"></i>  </h6>
@@ -144,9 +144,9 @@
                 </div>
                 
             </div>
-            <div class="col-md-6 py-5 " id="Edu_section">
+            <div class="col-md-6 py-5 " id="Edu_section" >
                 <div >
-                    <h1 class="mb-5 ms-3 bio fw-bold" id="eduTitle" >
+                    <h1 class="mb-5 ms-3 bio fw-bold text-dark" id="eduTitle" >
                         ပညာရေး
                     </h1>
                     <ul class="list-group fs-md-5 fs-6 mx-auto">
@@ -157,76 +157,73 @@
             </div>
         </div>
         <!--End Skill and Edu Section-->
-        <hr class="mt-5">
+        <hr class="my-5">
         <!--Contact Section-->
-            <div class="row" id="Contact_section">
-                <h1 class="bio fw-bold  pt-5 pt-lg-0 ms-3 .contact_title" id="contactTitle">ဆက်သွယ်ရန်</h1>
-               
-                <div class="col-12 col-lg-6 mt-3 mt-lg-5 py-3 border-end">
-                   
-                    <h4 class="ms-5 mb-2 mb-lg-4 contact_link1">
-                        <a href="https://www.facebook.com/oxy.thu" class="text-decoration-none contactIcon">
-                            <i class="fab fa-facebook "></i>
-                             <span class="ms-2 d-lg-inline d-none ">Aung Si Thu</span>
-                        </a>
-                    </h4>
-                   
-                    <h4  class="ms-5 mb-2 mb-lg-4  text-center text-lg-start  contact_link2">
-                        <a href="https://github.com/OxyThu" class="text-decoration-none github contactIcon">
-                            <i class="fab fa-github"></i> 
-                            <span class="ms-2 d-lg-inline d-none ">OxyThu</span>
-                        </a>
-                    </h4>
-                    <h4  class="ms-5 mb-2 mb-lg-4 contact_link3">
-                        <a href="https://www.instagram.com/oxy_thu/?hl=en" class="text-decoration-none insta contactIcon">
-                            <i class="fab fa-instagram-square"></i> 
-                            <span class="ms-2 d-lg-inline d-none ">oxy_thu</span>
-                        </a>
-                    </h4>
-                    
-                    <h4  class="ms-5  mb-2 mb-lg-4 text-center text-lg-start  contact_link4">
-                        <a href="https://www.youtube.com/channel/UCawabVprdxsYEjuFBbgEVHA" class="text-decoration-none youtube contactIcon">
-                            <i class="fab fa-youtube"></i>
-                            <span class="ms-2 d-lg-inline d-none ">OxyThu</span>
+        <div  id="Contact_section">
+            <h1 class="bio fw-bold text-center pt-5 pt-lg-0 ms-3 .contact_title" id="contactTitle">ဆက်သွယ်ရန်</h1>
+        <div class="row my-5">
+            <div class="col-10 col-lg-5 mx-auto bg-white rounded-pill">
+                <div class="row my-2">
+                     
+                    <h4  class="col-8  contact_link1 text-center mb-3">
+                        <a href="https://www.youtube.com/channel/UCawabVprdxsYEjuFBbgEVHA" class="text-decoration-none youtube contactIcon ">
+                            <i class="fab fa-youtube "></i>                               
                         </a> 
                     </h4>
-                    <h4  class="ms-5  mb-2 mb-lg-5  contact_link5">
+                    <h4  class="col-4   contact_link3 text-start ms-0 mb-3">
                         <a href="https://twitter.com/aungsi49983579" class="text-decoration-none twitter contactIcon">
-                            <i class="fab fa-twitter-square"></i>
-                            <span class="ms-2 d-lg-inline d-none ">aungsi49983579</span>
+                            <i class="fab fa-twitter-square"></i>                            
                         </a> 
                     </h4>
+                    <h4 class="col-4 contact_link5 text-center">
+                        <a href="https://www.facebook.com/oxy.thu" class="text-decoration-none contactIcon ">
+                            <i class="fab fa-facebook "></i>
+                        </a>
+                    </h4>
+                   
+                    <h4  class="col-4    contact_link2 text-center ">
+                        <a href="https://github.com/OxyThu" class="text-decoration-none github contactIcon ">
+                            <i class="fab fa-github"></i> 
+                        </a>
+                    </h4>
+                    <h4  class="col-4  contact_link4 text-center ">
+                        <a href="https://www.instagram.com/oxy_thu/?hl=en" class="text-decoration-none insta contactIcon ">
+                            <i class="fab fa-instagram-square"></i>                               
+                        </a>
+                    </h4>
+                   
                 </div>
-                <hr class="d-inline d-lg-none mt-3">
-                <div class="col-12 col-lg-6 mt-0" id="form_section">
+            </div>  
+        </div>
+        <div class="row">
+                <div class="col-11 col-lg-7 mt-3 mb-5  mx-auto" id="form_section">
                     <form>
-                       <div class="mb-2 mb-lg-4 formInput1">
-                            <label for="name" class="form-label ms-5 " id="formName">အမည်</label>
-                            <input type="text" id="name" class="form-control w-75 ms-5" placeholder="" disabled>
+                       <div class="mb-2 mb-lg-4 formInput1 ">
+                            <label for="name" class="form-label ms-5 ps-md-5 bio" id="formName">အမည်</label>
+                            <input type="text" id="name" class="form-control w-75 mx-auto" placeholder="" disabled>
                         </div>
                         <div class="mb-2 mb-lg-4 formInput2">
-                            <label for="email" class="form-label ms-5" id="formMail">အီး‌မေးလိပ်စာ</label>
-                            <input type="text" id="email" class="form-control w-75 ms-5" placeholder="" disabled>
+                            <label for="email" class="form-label ms-5 ps-md-5 bio" id="formMail">အီး‌မေးလိပ်စာ</label>
+                            <input type="text" id="email" class="form-control w-75 mx-auto" placeholder="" disabled>
                         </div>
                         <div class="mb-2 mb-lg-4 formInput3">
-                            <label for="subject" class="form-label ms-5" id="formSubject">အကြောင်းအရာ</label>
-                            <textarea name="" id="subject" cols="30" rows="3" class="form-control w-75 ms-5" disabled></textarea>
+                            <label for="subject" class="form-label ms-5 ps-md-5 bio" id="formSubject">အကြောင်းအရာ</label>
+                            <textarea name="" id="subject" cols="30" rows="3" class="form-control w-75 mx-auto" disabled></textarea>
                         </div>
-                        <div class="mb-5 mt-5 mt-lg-0 w-75 ms-5 formInput4">
-                            <button type="button" class="btn btn-secondary float-start" id="formSubmit" data-bs-toggle="modal" data-bs-target="#warning" >ပေးပို့သည်</button>
+                        <div class="mb-5 mt-5 mt-lg-0 w-75 ms-5 ps-lg-5 formInput4">
+                            <button type="button" class="btn btn-primary float-start" id="formSubmit" data-bs-toggle="modal" data-bs-target="#warning" >ပေးပို့သည်</button>
                         </div>
-                          
-                       
                       </form>
                 </div>
-               
-            </div>
+        </div>
+        </div>
+            
         <!--End Contact Section-->
 
     </div>
-    <div class="fixed">
-        <a href="#" class="text-decoration-none"><i class="fas fa-chevron-circle-up "></i></a>
-    </div>
+        <div class="fixed">
+        <a href="#" class="text-decoration-none text-warning"><i class="fas fa-chevron-circle-up "></i></a>
+        </div>
 
     <!--Warning Section-->
     <div class="modal pt-5 my-5 " id="warning">

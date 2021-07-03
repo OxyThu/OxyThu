@@ -1,10 +1,36 @@
+/*------Modifying Bootstrap ---------*/
 .rounded-bottom {
     border-bottom-right-radius: 50px!important;
     border-bottom-left-radius: 50px!important;
 }
+.rounded-pill {
+  border-bottom-right-radius: 50rem!important;
+  border-bottom-left-radius: 50rem!important;
+  border-top-right-radius: 250rem!important;
+  border-top-left-radius: 250rem!important;
+}
+.ms-0 {
+  margin-left: -1em!important;
+}
+
+
+/*-----backgound image and backgound color*/
+.bg{
+  background-image: url("../photos/bg.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment: fixed;
+}
+.skilledu{
+    background: rgba(167, 209, 212, 0.603) ;
+}
+
+/*------font setting------*/
 .bio{
     font-family: Arial, Helvetica, sans-serif;
-    
+    text-shadow: 1px 1px black;
+    color:floralwhite;
 }
 .engParagraph{
   line-height: 2em;
@@ -12,12 +38,7 @@
 .myanParagraph{
   line-height: 1.5em;
 }
-.rounded-start {
-    border-top-right-radius: 25px !important;
-    border-bottom-left-radius: 25px!important;
-    border-top-left-radius: 5px!important;
-    border-bottom-right-radius: 5px!important;
-}
+
 .carousel{
     z-index: 0;
 }
@@ -30,15 +51,8 @@
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
 }
-.mail{
-  background: linear-gradient(to right,#4285F4,#BB001B,#EA4335,#FBBC05,#34A853);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-.twitter{
+
+.twitter::before{
   color:#00acee;
 }
 .github{
@@ -114,17 +128,16 @@
   /*---- End Sidenav Section ----*/
 
   @media (max-width:800px) {
-    .contactIcon{font-size:3em ;}
+    .contactIcon{font-size:1.5em ;}
    
   }
 
   @media (min-width:800px) {
-    .contactIcon{font-size: 1em;}
+    .contactIcon{font-size: 1.5em;}
   }
 
   .fixed {
     position: fixed;
-    color: #73AD21;
     bottom: 10%;
     right: 5%;
     font-size: 3em;
