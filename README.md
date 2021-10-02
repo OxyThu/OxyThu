@@ -8,6 +8,5 @@
 <a href="https://www.youtube.com/channel/UCawabVprdxsYEjuFBbgEVHA" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="ucawabvprdxsyejufbbgevha" height="30" width="40" /></a>
 </p>
 <hr>
-<h3 align="center">Languages </h3>
-<p align="center"> 
+
 </p>
